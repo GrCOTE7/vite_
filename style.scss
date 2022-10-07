@@ -1,0 +1,58 @@
+$encre:rgb(0, 7, 70);
+$bgcolor:beige;
+$radius:.7rem;
+
+body {
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: $bgcolor;
+  color: darken($bgcolor, 0%);
+  font-size: 1.1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-arround;
+  margin: 1rem auto;
+  background-color: rgb(124, 118, 118);
+  border-radius: $radius;
+}
+
+h1,
+button {
+  text-align: center;
+  margin: 2rem auto 2rem;
+  padding: 1rem;
+  border-radius: $radius;
+  background-color: rgb(101, 86, 0);
+}
+
+div {
+  width: 70%;
+  text-align: justify;
+  overflow: hidden;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: $radius;
+  background-color: #333;
+}
+
+button {
+  margin: -.5rem auto 2rem;
+  color: yellow;
+  width: 94%;
+  border-color: rgb(79, 78, 78);
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width:700px) {
+  h1 {
+    width: 70%;
+    margin-bottom: .7rem;
+  }
+
+  button {
+    width: 77%;
+  }
+}
