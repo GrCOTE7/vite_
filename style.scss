@@ -1,40 +1,49 @@
 $encre:rgb(0, 7, 70);
 $bgcolor:beige;
-$radius:.7rem;
+$gc7:.7rem;
 
 body {
-  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: arial;
   background-color: $bgcolor;
   color: darken($bgcolor, 0%);
-  font-size: 1.1rem;
+  font-weight: 200;
 }
 
 main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-arround;
-  margin: 1rem auto;
-  background-color: rgb(124, 118, 118);
-  border-radius: $radius;
+  justify-content: space-around;
+  background-color: rgb(161, 161, 161);
+  border-radius: $gc7;
+  padding: 30px 0;
 }
 
 h1,
 button {
+  font-size: 1.5rem;
   text-align: center;
-  margin: 2rem auto 2rem;
+  margin: 0 auto;
   padding: 1rem;
-  border-radius: $radius;
-  background-color: rgb(101, 86, 0);
+  border-radius: $gc7;
+  background-color: rgb(110, 106, 85);
 }
 
-div {
+.icons{
+  width: 95%;
+  margin-top: 1rem; 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+p {
   width: 70%;
   text-align: justify;
   overflow: hidden;
   margin: 2rem auto;
   padding: 1rem;
-  border-radius: $radius;
+  border-radius: $gc7;
   background-color: #333;
 }
 
@@ -48,11 +57,12 @@ button {
 
 @media screen and (max-width:700px) {
   h1 {
-    width: 70%;
-    margin-bottom: .7rem;
+    width: 77%;
+    margin-bottom: $gc7;
   }
 
   button {
+    margin-top: $gc7;
     width: 77%;
   }
 }

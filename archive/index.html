@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mon site</title>
+</head>
+<body class="bg-[#EFFFFA]">
+<div class="flex flex-nowrap min-h-screen">
+    <nav id="nav-nav-js" class="bg-[#E5ECF4] w-40 max-w-xs p-2 transition-all overflow-hidden">
+        <ol class="text-[#8A4FFF]">
+            <li>
+                <a href="#" data-page="users" class="link-js">Utilisateurs</a>
+            </li>
+            <li>
+                <a href="#" data-page="courses" class="link-js">Formations</a>
+            </li>
+        </ol>
+    </nav>
+    <div class="grow relative">
+        <div id="button-nav-js" class="cursor-pointer absolute top-4 left-0 bg-[#E5ECF4] w-10 h-10 flex justify-center items-center rounded-tr-2xl rounded-br-2xl">
+            <i class="fi fi-angle-left transform-gpu"></i>
+        </div>
+        <div class="p-4">
+            <h1 class="text-4xl text-center">Mon super site</h1>
+            <div class="w-full h-screen overflow-auto flex justify-center items-center">
+                <div id="data-js"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="main.js" type="module"></script>
+</body>
+</html>
