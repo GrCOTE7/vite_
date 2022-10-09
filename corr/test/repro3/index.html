@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repro 3</title>
+  </head>
+  <body>
+     
+    <main class="flex flex-nowrap min-h-screen">
+
+      <nav class="bg-[#ddd] w-40 p-2 overflow-hidden transition-all duration-[1s]" id="nav-nav-js">
+        <div class="link-js" data-page="users">
+          Users
+        </div>
+        <div class="link-js" data-page="courses">
+          Courses
+        </div>
+        <div class="link-js" data-page="teachers">
+          Teachers
+        </div>
+      </nav>
+
+      <div class="grow">
+
+        <div class="bg-[#ddd] w-10 h-10 flex justify-center items-center
+          text-1xl absolute top-4" id="btn-nav-js">
+            <em class="fi fi-angle-left"></em>
+        </div>
+
+        <div class="p-4 h-screen flex justify-center items-center">
+
+          <div class="text-3xl self-start">
+            Mon Super Site
+          </div>
+
+          <div class="text-2xl absolute transition-all duration-[5s]" id="data-js">x</div>
+
+        </div>
+      </div>
+    </main>
+
+    <script src="main.js" type="module"></script>
+  </body>
+</html>

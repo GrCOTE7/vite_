@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repro2</title>
+  </head>
+  <body class="bg-[#f5ffff]">
+
+    <main class="flex flex-nowrap min-h-screen">
+      <nav id="nav-nav-js" class="bg-[#cbfafa] w-40 max-w-xs text-[#9f21ff]
+        font-semibold p-2 overflow-hidden">
+        <div data-page="users">Utilisateurs</div>
+        <div data-page="Courses">Formations</div>
+      </nav>
+
+      <div class="grow relative">
+
+        <div id="btn-nav-js" class="bg-[#cbfafa] absolute top-4 w-10 h-10 p-2
+          text-xl rounded-br-lg rounded-tr-lg cursor-pointer">
+          <em class="fi fi-angle-left"></em>
+        </div>
+        
+        <div class="p-4">
+          <h1 class="text-center text-3xl">Mon Super Site</h1>
+        </div>
+          <div class="w-full h-screen flex items-center justify-center">
+            <div id="data-js">JS</div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="main.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mon Super Site</title>
+  </head>
+
+  <body class="bg-[#EFFFFA]">
+    <main class="flex flex-nowrap min-h-screen">
+      <nav class="bg-[#E5ECF4] w-40 max-w-xs p-2 transition-all duration-700  overflow-hidden" id="nav-nav-js">
+        <ol class="text-[#8A4FFF]">
+          <li>
+            <a href="#" data-page="users" class="link-js">Utilisateurs</a>
+          </li>
+          <li>
+            <a href="#" data-page="courses" class="link-js">Formations</a>
+          </li>
+        </ol>
+      </nav>
+
+      <div class="grow relative">
+        <div class="cursor-pointer absolute top-4 left-0 bg-[#E5ECF4] w-10 h-10
+          flex justify-center items-center rounded-tr-[.5rem]
+          rounded-br-[.5rem]" id="btn-nav-js">
+          <em class="fi fi-angle-left transform-gpu transition-all duration-700"></em>
+        </div>
+
+        <div class="p-4">
+          <h1 class="text-3xl text-center">Mon super site</h1>
+          <div class="w-full h-screen overflow-auto flex
+            justify-center items-center">
+            <div id="data-js"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
