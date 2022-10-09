@@ -1,40 +1,29 @@
 "use strict";
-// let fetchData = async (page) => {
-//   return fetch(page)
-//     .then((response) => {
-//       return response.text()
-//     })
-// }
+let fetchData = async (page) => {
+  return fetch(page)
+    .then((response) => {
+      return response.text()
+    })
+}
 
-// let navLinksElts = document.getElementsByClassName('link-js')
-// let dataElt = document.getElementById('data-js')
+let navLinksElts = document.getElementsByClassName('link-js')
+let dataElt = document.getElementById('data-js')
 
-// for (let element of navLinksElts) {
+for (let element of navLinksElts) {
 
-//   element.onclick = async (event) => {
-//     let elt = event.target
-//     let page = elt.getAttribute('data-page')
-//     let data = await mafetchData(page + '.html')
+  element.onclick = async (event) => {
+    let elt = event.target
+    let page = elt.getAttribute('data-page')
+    let data = await fetchData(page + '.html')
 
-//     for (let resetColor of navLinksElts) {
-//       resetColor.style.color = 'black'
-//     }
-//     element.style.color = 'blue'
+    for (let resetColor of navLinksElts) {
+      resetColor.style.color = 'black'
+    }
+    element.style.color = 'blue'
 
-//     dataElt.innerHTML = data
-//   }
-// }
-
-// let mapage = 'users.html';
-// let mafetchData = async (mapage) => {
-//   return fetch(mapage)
-//     .then((response) => {
-//       return response.text()
-//     })
-// }
-
-// dataElt.innerHTML = mafetchData()
-
+    dataElt.innerHTML = data
+  }
+}
 
 // console.log(
 //   (fetch(mapage).then(
