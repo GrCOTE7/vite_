@@ -1,14 +1,16 @@
-import '/styles.css'
-localStorage.clear();
+export function index() {
+  localStorage.clear();
 
-console.log('ok')
+  console.log('ok')
 
-let goBtnElt = document.getElementById('goElt')
-goBtnElt.addEventListener('click', (() => {
-  console.log('clicked')
-  localStorage.settings =1
-}))
+  let goBtnElt = document.getElementById('goElt')
+  goBtnElt.addEventListener('click', (() => {
+    console.log('clicked')
+    localStorage.settings = 'PHP'
+  }))
 
-setTimeout(()=>{
-  goBtnElt.click()
-}, 2000)
+  setTimeout(() => {
+    goBtnElt.click()
+  }, 20000)
+}
+index()
