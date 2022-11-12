@@ -9,8 +9,8 @@ export function index() {
     localStorage.settings = 'PHP'
   }))
 
-  setTimeout(() => {
-    goBtnElt.click()
-  }, 20000)
+  // setTimeout(() => {
+  //   goBtnElt.click()
+  // }, 2000)
 }
 index()
