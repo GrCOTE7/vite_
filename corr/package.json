@@ -11,7 +11,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "tailwind": "^4.0.0"
+    "sass": "^1.56.1",
+    "tailwind": "^4.0.0",
+    "vite": "^3.2.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.12",
