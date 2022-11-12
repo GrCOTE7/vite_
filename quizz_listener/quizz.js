@@ -1,12 +1,15 @@
 export function quizz() {
 
+  document.getElementById('settingsElt').innerHTML = localStorage.settings
+
+
   document.getElementById('appElt').innerHTML = 'Affiche question ' + localStorage.currentQ
 
   let validateBtnElt = document.getElementById('validateBtnElt')
 
   validateBtnElt.addEventListener('click', ((e) => {
-    e.preventDefault()
-    // Analyy des réponses
+    // e.preventDefault()
+    // Analyse des réponses
 
     //Q suivante
     localStorage.currentQ++
@@ -16,14 +19,30 @@ export function quizz() {
     if (localStorage.currentQ >= localStorage.limit) {
       window.location = "score.html";
     } else {
-      window.location = "play.html";
+      window.location = "quizz.html";
     }
 
 
   }))
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   // setTimeout(() => {
-  //   window.location = "index.html";
+  //   window.location = "play.html";
   // }, 10000)
 }
 quizz()
